@@ -1,0 +1,71 @@
+body {
+    margin: 0 auto;
+}
+.header {
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    height: 80px;
+    font-size: 44px;
+}
+.navigasi {
+    background-color: #3a5795; 
+    height: 50px; 
+}
+.navigasi li {
+    list-style: none;
+}
+.navigasi li {
+    float: left; /*memposisikan dari sebelah kiri*/
+    background-color: transparent;
+    padding: 15px; /*Dari posisi samping kiri kanan atas bawah tarik kedalam sebanyak 15 pixel*/
+    margin-left: 5px; /*Jarak dari sebelah kiri dari luar sebanyak 15pixel*/
+}
+.navigasi li:hover {
+    float: left; /*memposisikan dari sebelah kiri*/
+    background-color: #000; 
+    padding: 15px; /*Dari posisi samping kiri kanan atas bawah tarik kedalam sebanyak 15 pixel*/
+}
+.navigasi li a {
+    color: #fff; 
+    font-weight: bold; 
+}
+.sidebar {
+    width: 20%; /* agan bisa mengganti dengan pixel atau % persen :) */
+    float: left;
+    padding: 15px;
+    background-color: #ddd;
+}
+
+.content {
+    width: 75%;
+    float: right;
+    background-color: #fff;
+    padding: 15px;
+}
+.title-form-daftar {
+    background-color: #ddd;
+    margin: 0 -15px;
+    padding: 15px;
+}
+@media (max-width: 1200px){
+    .sidebar {
+        clear: both;
+        width: 97.3%; /* bisa mengganti dengan pixel atau % persen */
+        float: none;
+        padding: 15px;
+        background-color: #ddd;
+    }
+    .content {
+        clear: both;
+        width: 97.3%;
+        float: none;
+        background-color: #fff;
+        padding: 15px;
+    }
+    .title-form-daftar {
+        background-color: #ddd;
+        margin: 0 15px;
+        padding: 15px;
+    }
+}
